@@ -1,6 +1,6 @@
 # fonts4dev
 
-> A Vue.js project
+![http://i.imgur.com/Zwpg4Wg.png](Fonts4Dev)
 
 ## Build Setup
 
@@ -28,3 +28,20 @@ npm test
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## Fonts
+- Google Fonts (fonts.google.com)
+- Font Squirrel (fontsquirrel.com)
+
+## References
+- http://hivelogic.com/articles/top-10-programming-fonts/
+- http://wesbos.com/programming-fonts/
+
+## Tech stack
+- Vue.js
+- Vue-router
+- Web Font Loader
+
+## Todo
+- Add editable-mode for editor
+- Add Google Analytics
