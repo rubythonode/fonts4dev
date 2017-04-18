@@ -1,6 +1,6 @@
 # fonts4dev
 
-![http://i.imgur.com/Zwpg4Wg.png](Fonts4Dev)
+![Fonts4Dev](http://i.imgur.com/Zwpg4Wg.png)
 
 ## Build Setup
 
