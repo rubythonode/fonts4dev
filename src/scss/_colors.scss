@@ -1,0 +1,20 @@
+.c {
+  &--constant {
+    color: $color--constant;
+  }
+  &--variable {
+    color: $color--variable;
+  }
+  &--operator {
+    color: $color--operator;
+  }
+  &--args {
+    color: $color--args;
+  }
+  &--string {
+    color: $color--string;
+  }
+  &--comment {
+    color: $color--comment;
+  }
+}

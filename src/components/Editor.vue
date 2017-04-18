@@ -1,0 +1,54 @@
+<template>
+  <div class="editor">
+    <div class="editor__header">
+      <nav class="ctas">
+        <span class="bullet"></span>
+        <span class="bullet"></span>
+        <span class="bullet"></span>
+      </nav>
+    </div>
+
+    <div class="editor__primary">
+      <sidebar></sidebar>
+      <preview :font="fontFaceName" :font-size="fontSize" :line-spacing="lineSpacing"></preview>
+    </div>
+  </div>
+</template>
+
+<script>
+  import Sidebar from './Sidebar.vue'
+  import Preview from './Preview.vue'
+  import { bus } from './../helpers/bus'
+  import { config } from './../helpers/config'
+  import _ from 'lodash'
+  export default {
+    components: {
+      Sidebar,
+      Preview
+    },
+    computed: {
+      fontFaceName () {
+        let font = _.find(config.FONTS, { value: this.fontFace })
+        return font ? font.font_face : 'Fira Code'
+      }
+    },
+    data () {
+      return {
+        fontFace: config.DEFAULT_FONT_FACE,
+        fontSize: config.DEFAULT_FONT_SIZE,
+        lineSpacing: config.DEFAULT_LINE_SPACING
+      }
+    },
+    created () {
+      bus.on('font_size', (value) => {
+        this.fontSize = value
+      })
+      bus.on('line_spacing', (value) => {
+        this.lineSpacing = value
+      })
+      bus.on('font_face', (value) => {
+        this.fontFace = value
+      })
+    }
+  }
+</script>
