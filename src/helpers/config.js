@@ -12,8 +12,8 @@ const config = {
     { value: 'droid-sans-mono', name: 'Droid Sans Mono', font_face: 'Droid Sans Mono', link: { download: fontSquirrel + 'droid-sans-mono' } },
     { value: 'inconsolata', name: 'Inconsolata', font_face: 'Inconsolata', link: { download: fontSquirrel + 'Inconsolata' } },
     { value: 'ubuntu-mono', name: 'Ubuntu Mono', font_face: 'Ubuntu Mono', link: { download: fontSquirrel + 'ubuntu-mono' } },
-    { value: 'dejavu-sans-mono', name: 'Dejavu Sans Mono', font_face: 'Dejavu Sans Mono', link: { download: fontSquirrel + 'dejavu-sans-mono' } },
-    { value: 'm-1m', name: 'M+ 1M', font_face: 'mplus onem', link: { download: fontSquirrel + 'M-1m' } },
+    { value: 'dejavu-sans-mono', name: 'DejaVu Sans Mono', font_face: 'Dejavu Sans Mono', link: { download: fontSquirrel + 'dejavu-sans-mono' } },
+    { value: 'm-1m', name: 'M+ 1m', font_face: 'mplus onem', link: { download: fontSquirrel + 'M-1m' } },
     { value: 'hack', name: 'Hack', font_face: 'Hack', link: { download: fontSquirrel + 'hack' } }
   ]
 }

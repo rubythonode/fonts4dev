@@ -24,7 +24,7 @@
     computed: {
       fontFaceName () {
         let font = _.find(config.FONTS, { value: this.fontFace })
-        return font ? font.font_face : 'Fira Code'
+        return font ? font.name : 'Fira Code'
       }
     },
     data () {
