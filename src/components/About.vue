@@ -45,6 +45,23 @@
   export default {
     components: {
       EditorHeader
+    },
+    created () {
+      window.addEventListener('resize', this.changeEditorHeight)
+    },
+    mounted () {
+      this.changeEditorHeight()
+    },
+    methods: {
+      changeEditorHeight () {
+        var padding = 200
+        if (window.innerHeight <= 768) {
+          padding = 100
+        }
+
+        var editor = document.getElementsByClassName('editor')[0]
+        editor.style.height = window.innerHeight - padding + 'px'
+      }
     }
   }
 </script>

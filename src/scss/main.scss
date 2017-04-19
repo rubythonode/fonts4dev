@@ -22,10 +22,13 @@ body {
 
 .editor {
   width: 1170px;
-  height: 790px;
+  height: 760px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 50px rgba(0,0,0,.2);
+  @media all and (max-width: 1170px) {
+    width: 950px;
+  }
   &__header {
     /* CSS for .editor__header */
     height: 50px;

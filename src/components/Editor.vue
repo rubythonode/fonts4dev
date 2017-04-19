@@ -44,6 +44,23 @@
       bus.on('font_face', (value) => {
         this.fontFace = value
       })
+
+      window.addEventListener('resize', this.changeEditorHeight)
+    },
+    mounted () {
+      this.changeEditorHeight()
+    },
+    methods: {
+      changeEditorHeight () {
+        console.log('1')
+        var padding = 200
+        if (window.innerHeight <= 768) {
+          padding = 100
+        }
+
+        var editor = document.getElementsByClassName('editor')[0]
+        editor.style.height = window.innerHeight - padding + 'px'
+      }
     }
   }
 </script>
