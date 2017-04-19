@@ -44,4 +44,5 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 
 ## Todo
 - Add editable-mode for editor
+- PWA integration
 - Add Google Analytics
