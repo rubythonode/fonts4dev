@@ -3,7 +3,7 @@
     <editor-header></editor-header>
     <div class="editor__primary">
       <sidebar></sidebar>
-      <preview :font="fontFaceName" :font-size="fontSize" :line-spacing="lineSpacing"></preview>
+      <preview :font-name="fontName" :font-face="fontFace" :font-size="fontSize" :line-spacing="lineSpacing"></preview>
     </div>
   </div>
 </template>
@@ -22,14 +22,18 @@
       Preview
     },
     computed: {
-      fontFaceName () {
-        let font = _.find(config.FONTS, { value: this.fontFace })
+      fontName () {
+        let font = _.find(config.FONTS, { value: this.fontSelected })
         return font ? font.name : 'Fira Code'
+      },
+      fontFace () {
+        let font = _.find(config.FONTS, { value: this.fontSelected })
+        return font ? font.font_face : 'Fira Code'
       }
     },
     data () {
       return {
-        fontFace: config.DEFAULT_FONT_FACE,
+        fontSelected: config.DEFAULT_FONT_FACE,
         fontSize: config.DEFAULT_FONT_SIZE,
         lineSpacing: config.DEFAULT_LINE_SPACING
       }
@@ -42,7 +46,7 @@
         this.lineSpacing = value
       })
       bus.on('font_face', (value) => {
-        this.fontFace = value
+        this.fontSelected = value
       })
 
       window.addEventListener('resize', this.changeEditorHeight)

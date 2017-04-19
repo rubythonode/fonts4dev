@@ -29,7 +29,7 @@
         <span class="c--comment">// Find the `font_face`, `font_size` and change their value</span>
       </li>
       <li class="line line--code">{</li>
-      <li class="line line--code">&nbsp;&nbsp;"font_face": "{{ font }}"</li>
+      <li class="line line--code">&nbsp;&nbsp;"font_face": "{{ fontName }}"</li>
       <li class="line line--code">&nbsp;&nbsp;"font_size": {{ fontSize }}</li>
       <li class="line line--code">}</li>
     </ul>
@@ -38,11 +38,11 @@
 
 <script>
   export default {
-    props: ['font', 'fontSize', 'lineSpacing'],
+    props: ['fontName', 'fontFace', 'fontSize', 'lineSpacing'],
     computed: {
       styles () {
         return {
-          'font-family': this.font,
+          'font-family': this.fontFace,
           'font-size': this.fontSize + 'px',
           'line-height': this.lineSpacing
         }
