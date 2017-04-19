@@ -3,6 +3,7 @@
 @import "fonts";
 @import "variables";
 @import "colors";
+@import "about";
 
 /* Main Styles */
 body {
@@ -32,6 +33,10 @@ body {
     background-color: $color--light-grey;
     border-radius: $editor--radius $editor--radius 0 0;
     padding: 0 30px;
+    nav {
+      display: inline-block;
+      margin-right: 30px;
+    }
     .ctas {
       .bullet {
         display: inline-block;
@@ -45,6 +50,16 @@ body {
         }
         &:nth-child(3) {
           background-color: $color--green;
+        }
+      }
+    }
+    .menu {
+      a {
+        color: $color--dark-grey;
+        margin-right: 15px;
+        transition: color .3s ease-in-out;
+        &:hover {
+          color: $color--dark;
         }
       }
     }

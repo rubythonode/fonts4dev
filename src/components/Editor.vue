@@ -1,13 +1,6 @@
 <template>
   <div class="editor">
-    <div class="editor__header">
-      <nav class="ctas">
-        <span class="bullet"></span>
-        <span class="bullet"></span>
-        <span class="bullet"></span>
-      </nav>
-    </div>
-
+    <editor-header></editor-header>
     <div class="editor__primary">
       <sidebar></sidebar>
       <preview :font="fontFaceName" :font-size="fontSize" :line-spacing="lineSpacing"></preview>
@@ -16,6 +9,7 @@
 </template>
 
 <script>
+  import EditorHeader from './Header.vue'
   import Sidebar from './Sidebar.vue'
   import Preview from './Preview.vue'
   import { bus } from './../helpers/bus'
@@ -23,6 +17,7 @@
   import _ from 'lodash'
   export default {
     components: {
+      EditorHeader,
       Sidebar,
       Preview
     },
