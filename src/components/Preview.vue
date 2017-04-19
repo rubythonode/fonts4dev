@@ -22,6 +22,12 @@
       <li class="line line--code">
         <span class="c--comment">// Sublime config</span>
       </li>
+      <li class="line line--code">
+        <span class="c--comment">// Open: Preferences > Settings</span>
+      </li>
+      <li class="line line--code">
+        <span class="c--comment">// Find the `font_face`, `font_size` and change their value</span>
+      </li>
       <li class="line line--code">{</li>
       <li class="line line--code">&nbsp;&nbsp;"font_face": "{{ font }}"</li>
       <li class="line line--code">&nbsp;&nbsp;"font_size": {{ fontSize }}</li>

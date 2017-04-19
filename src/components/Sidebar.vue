@@ -1,7 +1,7 @@
 <template>
   <div class="editor__sidebar">
     <div class="editor__sidebar__section">
-      <h3 class="editor__sidebar__section-title">Editor font</h3>
+      <h3 class="editor__sidebar__section-title">Editor Font</h3>
 
       <div class="editor__sidebar__section-item">
         <label>Primary font</label>
