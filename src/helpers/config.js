@@ -14,7 +14,8 @@ const config = {
     { value: 'ubuntu-mono', name: 'Ubuntu Mono', font_face: 'Ubuntu Mono', link: { download: fontSquirrel + 'ubuntu-mono' } },
     { value: 'dejavu-sans-mono', name: 'DejaVu Sans Mono', font_face: 'Dejavu Sans Mono', link: { download: fontSquirrel + 'dejavu-sans-mono' } },
     { value: 'm-1m', name: 'M+ 1m', font_face: 'mplus onem', link: { download: fontSquirrel + 'M-1m' } },
-    { value: 'hack', name: 'Hack', font_face: 'Hack', link: { download: fontSquirrel + 'hack' } }
+    { value: 'hack', name: 'Hack', font_face: 'Hack', link: { download: fontSquirrel + 'hack' } },
+    { value: 'liberation-mono', name: 'Liberation Mono', font_face: 'Liberation Mono', link: { download: fontSquirrel + 'liberation-mono' } }
   ]
 }
 
