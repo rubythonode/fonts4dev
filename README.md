@@ -43,6 +43,7 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 - Web Font Loader
 
 ## Todo
-- Add editable-mode for editor
-- PWA integration
-- Add Google Analytics
+
+- [ ] Add editable-mode for editor
+- [ ] PWA integration
+- [ ] Add Google Analytics
