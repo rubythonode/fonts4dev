@@ -6,7 +6,7 @@
       <div class="editor__sidebar__section-item">
         <label>Primary font</label>
         <select v-model="fontFace">
-          <option v-for="font in fonts" :value="font.value">{{ font.name }}</option>
+          <option v-for="font in sortedFonts" :value="font.value">{{ font.name }}</option>
         </select>
       </div>
 
@@ -43,6 +43,17 @@
         } else {
           return 'Download font'
         }
+      },
+      sortedFonts () {
+        return this.fonts.sort((a, b) => {
+          if (a.name.charAt(0) > b.name.charAt(0)) {
+            return 1
+          }
+          if (a.name.charAt(0) < b.name.charAt(0)) {
+            return -1
+          }
+          return 0
+        })
       }
     },
     data () {
